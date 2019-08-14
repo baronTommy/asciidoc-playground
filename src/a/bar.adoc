@@ -1,0 +1,19 @@
+ifdef::env-html[]
+image::./bar.svg[opts=interactive]
+endif::[]
+
+ifdef::env-vscode[]
+[mermaid, bar, svg]
+....
+sequenceDiagram
+    Alice->>Bob: Hello Bob, how are youbbb?
+    alt is sick
+        Bob->>Alice: Not so good :(
+    else is well
+        Bob->>Alice: Feeling fresh like a daisy
+    end
+    opt Extra response
+        Bob->>Alice: Thanks for asking
+    end
+....
+endif::[]
