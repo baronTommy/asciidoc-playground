@@ -1,0 +1,4 @@
+{
+    "asciidoc.use_asciidoctor_js": false,
+    "asciidoc.asciidoctor_command": "asciidoctor -a __rootDir=/Volumes/workspace/asciidoc-playground -a __imgDir=/.adocDist/img -a env-vscode -a source-highlighter=coderay -a __resourcesDir=adocResources -a outdir=/Volumes/workspace/asciidoc-playground/.asciidoctor-diagram -a imagesdir=/Volumes/workspace/asciidoc-playground/.asciidoctor-diagram -a imagesoutdir=/Volumes/workspace/asciidoc-playground/.asciidoctor-diagram -r asciidoctor-diagram -o-",
+}

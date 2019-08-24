@@ -22,12 +22,13 @@ npm install -g mermaid.cli
 === 元ネタのコードから画像生成
 [source,bash]
 ----
-asciidoctor -a imagesdir=/Volumes/workspace/asciidoc-playground/.adocDist/img -r asciidoctor-diagram -o .asciidoctor-diagram/gomi.html adocResources/imgSrc/asciidoctor-diagram/*.adoc
+# bash
+asciidoctor -a imagesdir=`pwd`/.adocDist/img -r asciidoctor-diagram -o .asciidoctor-diagram/gomi.html adocResources/imgSrc/asciidoctor-diagram/*.adoc
 ----
 
 === VSCodeの画像のホットリロードが有効でない
-image を表示することで乗り切る
-`image::{imagesdir}/bar.svg[opts=interactive]` 
+image を表示することで乗り切る +
+`image::{imagesdir}/bar.svg[opts=interactive]` +
 画像は2つでるのはやむなし
 
 
@@ -35,9 +36,19 @@ image を表示することで乗り切る
 __imgDirに画像を準備しておく  
 
 === HTML
+
+`/adocResources/docSrc/adoc/toc/index.adoc` を作る
+
 [source,bash]
 ----
-asciidoctor -a __rootDir=/Volumes/workspace/asciidoc-playground -a __imgDir=/.adocDist/img  -a __resourcesDir=adocResources -o .adocDist/index.html src/index.adoc
+find src -name "*.adoc" | sed "s/^/{__rootDir}\//g"
+----
+`{__rootDir}/src/index.adoc` を除外
+
+[source,bash]
+----
+# bash
+asciidoctor -a __rootDir=`pwd` -a __imgDir=/.adocDist/img  -a __resourcesDir=adocResources -o .adocDist/index.html src/index.adoc
 ----
 
 === EPUB
