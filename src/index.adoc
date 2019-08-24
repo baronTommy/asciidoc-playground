@@ -1,0 +1,42 @@
+:page-layout: docs
+:lang: ja
+// font awsomeを使用する。
+:icons: font
+// 目次を表示する。左側に表示する。
+:toc: left
+// 第何レベルまで目次を表示するか。
+:toclevels: 2
+// タイトルにリンクをつける
+:linkattrs:
+// 章番号を付けるか。属性を定義しておくだけで章番号が付けられる。
+:sectnums:
+// ソースコードをハイライトする。
+:source-highlighter: coderay
+// UIマクロを有効にする
+:experimental:
+
+// 各ラベルの日本語定義
+:toc-title: 
+:preface-title: はじめに
+:appendix-caption: 付録
+:caution-caption: 注意
+:example-caption: 例
+:figure-caption: 図
+:important-caption: 重要
+:last-update-label: 最終更新
+:manname-title: 名前
+:note-caption: 注記
+:preface-title: まえがき
+:table-caption: 表
+:tip-caption: ヒント
+:untitled-label: 無題
+:version-label: バージョン
+:warning-caption: 警告
+:listing-caption:
+// デフォルトの章番号の接頭辞「Chapter.」が表示されないよう、値を空で設定する。
+:sectanchors:
+
+// -------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------
+include::{__rootDir}/{__resourcesDir}/docSrc/adoc/toc/index.adoc[]

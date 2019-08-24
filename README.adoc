@@ -1,0 +1,56 @@
+== 準備
+
+=== plugin
+
+[source,bash]
+----
+sudo gem install asciidoctor asciidoctor-diagram
+sudo gem install asciidoctor-epub3 --pre
+npm install -g mermaid.cli
+----
+
+
+=== VSCode plugin
+- https://marketplace.visualstudio.com/items?itemName=joaompinto.asciidoctor-vscode
+
+
+== asciidoctor-diagram関連
+
+=== 元ネタのコードのパス
+`adocResources/imgSrc/asciidoctor-diagram/`
+
+=== 元ネタのコードから画像生成
+[source,bash]
+----
+asciidoctor -a imagesdir=/Volumes/workspace/asciidoc-playground/.adocDist/img -r asciidoctor-diagram -o .asciidoctor-diagram/gomi.html adocResources/imgSrc/asciidoctor-diagram/*.adoc
+----
+
+=== VSCodeの画像のホットリロードが有効でない
+image を表示することで乗り切る
+`image::{imagesdir}/bar.svg[opts=interactive]` 
+画像は2つでるのはやむなし
+
+
+== ビルド
+__imgDirに画像を準備しておく  
+
+=== HTML
+[source,bash]
+----
+asciidoctor -a __rootDir=/Volumes/workspace/asciidoc-playground -a __imgDir=/.adocDist/img  -a __resourcesDir=adocResources -o .adocDist/index.html src/index.adoc
+----
+
+=== EPUB
+未定
+
+=== txt
+未定 npm の (html to txt)
+
+
+== その他
+掃除コマンド
+
+[source,bash]
+----
+rm -rf .adocDist .asciidoctor-diagram
+----

@@ -1,0 +1,6 @@
+
+== docSrc
+adocからincludeする 共通のファイル
+
+== imgSRC
+mermaid.js など コードから画像生成可能なファイル置き場

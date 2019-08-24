@@ -1,0 +1,11 @@
+= asciidoc を試す
+
+toc::[]
+
+== src/a/index.adoc
+[.result]
+include::{__rootDir}/src/a/index.adoc[]
+
+== src/b/index.adoc
+[.result]
+include::{__rootDir}/src/b/index.adoc[]

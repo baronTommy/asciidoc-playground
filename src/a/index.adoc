@@ -1,0 +1,17 @@
+=== まずソース
+
+.index.js
+[source, js]
+----
+include::index.js[]
+----
+
+
+==== わかりやすい画像1
+
+image::{__rootDir}{__imgDir}/bar.svg[opts=interactive]
+
+
+==== わかりやすい画像2
+
+image::{__rootDir}{__imgDir}/foo.svg[opts=interactive]

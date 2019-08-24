@@ -1,12 +1,9 @@
-ifdef::env-html[]
-image::./bar.svg[opts=interactive]
-endif::[]
+image::{imagesdir}/bar.svg[opts=interactive]
 
-ifdef::env-vscode[]
 [mermaid, bar, svg]
 ....
 sequenceDiagram
-    Alice->>Bob: Hello Bob, how are youbbb?
+    Alice->>Bob: Hello Bob, how are kkkjjj?
     alt is sick
         Bob->>Alice: Not so good :(
     else is well
@@ -16,4 +13,3 @@ sequenceDiagram
         Bob->>Alice: Thanks for asking
     end
 ....
-endif::[]

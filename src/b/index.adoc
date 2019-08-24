@@ -1,0 +1,162 @@
+=== まずソースです
+
+.index.js
+[source, js]
+----
+include::index.js[]
+----
+
+---
+
+
+include::{__rootDir}/{__resourcesDir}/docSrc/adoc/say/index.adoc[]
+
+
+ruby だったら こうするよ
+
+.app.rb
+[source,ruby]
+----
+require 'sinatra'
+
+get '/hi' do
+  "Hello aaa!"
+end
+----
+
+
+==== xxx
+
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
+* a
