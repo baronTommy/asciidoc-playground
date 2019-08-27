@@ -48,7 +48,7 @@ find src -name "*.adoc" | sed "s/^/{__rootDir}\//g"
 [source,bash]
 ----
 # bash
-asciidoctor -a __rootDir=`pwd` -a __imgDir=/.adocDist/img  -a __resourcesDir=adocResources -o .adocDist/index.html src/index.adoc
+asciidoctor -a __rootDir=`pwd` -a __imgDir=./img  -a __resourcesDir=adocResources -o .adocDist/index.html src/index.adoc
 ----
 
 === EPUB
